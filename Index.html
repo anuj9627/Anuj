@@ -5,42 +5,131 @@
   <title>For Sona Mona 💖</title>
   <style>
     body {
-      background: linear-gradient(to right, #ffdde1, #ee9ca7);
       font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
       text-align: center;
-      padding: 50px;
+      padding: 30px;
       color: #333;
     }
     h1 {
       font-size: 2.5em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
+    .question {
+      margin: 20px 0;
+    }
+    input[type="text"], select {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
     button {
-      padding: 15px 30px;
+      padding: 12px 25px;
       font-size: 1em;
-      margin: 10px;
+      margin-top: 30px;
       border: none;
       border-radius: 8px;
-      cursor: pointer;
-    }
-    .yes {
       background-color: #ff69b4;
       color: white;
+      cursor: pointer;
     }
-    .think {
-      background-color: #f0e68c;
-      color: #333;
+    #result {
+      margin-top: 40px;
+      font-size: 1.5em;
+      color: #d6336c;
     }
   </style>
 </head>
 <body>
-  <h1>Sona Mona, Will You Be Mine Forever? 💍</h1>
-  <p>From the moment I met you, I knew you were special. Today, I ask you with all my heart...</p>
-  <button class="yes" onclick="alert('Yay! I love you too 💖')">Yes, I Love You!</button>
-  <button class="think" onclick="alert('Take your time... I’ll be waiting with love 💌')">Let Me Think...</button>
+  <h1>Dear Sona Mona 💕</h1>
+  <p>Just a few questions from my heart to yours...</p>
+
+  <form id="loveForm">
+    <div class="question">1. Kya tum mujhe pasand karti ho?<br>
+      <select required>
+        <option value="">Choose</option>
+        <option>Haan, bohot zyada</option>
+        <option>Thoda thoda</option>
+        <option>Nahi</option>
+      </select>
+    </div>
+
+    <div class="question">2. Tumhare liye pyaar ka matlab kya hai?<br>
+      <input type="text" required>
+    </div>
+
+    <div class="question">3. Tumhe meri kaunsi baat sabse achhi lagti hai?<br>
+      <input type="text" required>
+    </div>
+
+    <div class="question">4. Jab tum udaas hoti ho, kya mujhe yaad karti ho?<br>
+      <select required>
+        <option value="">Choose</option>
+        <option>Hamesha</option>
+        <option>Kabhi kabhi</option>
+        <option>Nahi</option>
+      </select>
+    </div>
+
+    <div class="question">5. Agar hum kahin ghoomne jayein, tum kahan jaana chahogi?<br>
+      <input type="text" required>
+    </div>
+
+    <div class="question">6. Tumhare sapno ka partner kaisa hota hai?<br>
+      <input type="text" required>
+    </div>
+
+    <div class="question">7. Kya tumhe lagta hai hum perfect jodi hain?<br>
+      <select required>
+        <option value="">Choose</option>
+        <option>Bilkul</option>
+        <option>Shaayad</option>
+        <option>Nahi</option>
+      </select>
+    </div>
+
+    <div class="question">8. Tumhare liye sabse romantic moment kya tha humare saath?<br>
+      <input type="text" required>
+    </div>
+
+    <div class="question">9. Agar tumhe ek wish mile, kya tum mujhe apne future mein chahti?<br>
+      <select required>
+        <option value="">Choose</option>
+        <option>Haan, hamesha</option>
+        <option>Shaayad</option>
+        <option>Nahi</option>
+      </select>
+    </div>
+
+    <div class="question">10. Kya tum mere saath apni zindagi bitana chahogi?<br>
+      <select required>
+        <option value="">Choose</option>
+        <option>Haan, main ready hoon</option>
+        <option>Thoda waqt chahiye</option>
+        <option>Nahi</option>
+      </select>
+    </div>
+
+    <button type="submit">Submit & See My Heart</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('loveForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('result').innerHTML = `
+        💍 Sona Mona, tumhare har jawab ne mere dil ko khushi se bhar diya.  
+        Ab main tumse ek sawal poochna chahta hoon...  
+        <strong>Will you marry me?</strong> 💖
+        <br><br>
+        <button onclick="alert('Yay! I love you too 💘')">Yes, I will!</button>
+        <button onclick="alert('Main intezaar karunga, hamesha 💌')">Let me think...</button>
+      `;
+    });
+  </script>
 </body>
 </html>
