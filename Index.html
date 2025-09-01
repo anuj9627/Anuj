@@ -1,135 +1,81 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>For Sona Mona 💖</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffdde1, #ee9ca7);
-      text-align: center;
-      padding: 30px;
-      color: #333;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .question {
-      margin: 20px 0;
-    }
-    input[type="text"], select {
-      padding: 10px;
-      width: 80%;
-      max-width: 400px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 12px 25px;
-      font-size: 1em;
-      margin-top: 30px;
-      border: none;
-      border-radius: 8px;
-      background-color: #ff69b4;
-      color: white;
-      cursor: pointer;
-    }
-    #result {
-      margin-top: 40px;
-      font-size: 1.5em;
-      color: #d6336c;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For My Beautiful Mona 💖</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fceabb, #f8b500);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 60px 20px;
+            color: #4b2e83;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-family: 'Brush Script MT', cursive;
+        }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #b33951;
+        }
+        p {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: #b33951;
+            color: white;
+            font-size: 1.5em;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 40px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(179, 57, 81, 0.6);
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #8a2840;
+        }
+        #proposalMessage {
+            display: none;
+            margin-top: 50px;
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #d90429;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% {transform: scale(1);}
+            50% {transform: scale(1.1);}
+        }
+        .heart {
+            color: #d90429;
+            font-size: 1.5em;
+            animation: beat 1s infinite;
+            margin-left: 8px;
+        }
+        @keyframes beat {
+            0%, 100% {transform: scale(1);}
+            50% {transform: scale(1.3);}
+        }
+    </style>
 </head>
 <body>
-  <h1>Dear Sona Mona 💕</h1>
-  <p>Just a few questions from my heart to yours...</p>
+    <h1>For My Beautiful Mona <span class="heart">❤️</span></h1>
+    <h2>My Sweet Sona</h2>
+    <p>Every moment with you is magical and I can't imagine my life without you.</p>
+    <p>I have one important question to ask you...</p>
+    <button onclick="showProposal()">Click here, Mona 💖</button>
+    <div id="proposalMessage">Will you be my girlfriend forever? <span class="heart">💘</span></div>
 
-  <form id="loveForm">
-    <div class="question">1. Kya tum mujhe pasand karti ho?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, bohot zyada</option>
-        <option>Thoda thoda</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">2. Tumhare liye pyaar ka matlab kya hai?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">3. Tumhe meri kaunsi baat sabse achhi lagti hai?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">4. Jab tum udaas hoti ho, kya mujhe yaad karti ho?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Hamesha</option>
-        <option>Kabhi kabhi</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">5. Agar hum kahin ghoomne jayein, tum kahan jaana chahogi?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">6. Tumhare sapno ka partner kaisa hota hai?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">7. Kya tumhe lagta hai hum perfect jodi hain?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Bilkul</option>
-        <option>Shaayad</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">8. Tumhare liye sabse romantic moment kya tha humare saath?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">9. Agar tumhe ek wish mile, kya tum mujhe apne future mein chahti?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, hamesha</option>
-        <option>Shaayad</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">10. Kya tum mere saath apni zindagi bitana chahogi?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, main ready hoon</option>
-        <option>Thoda waqt chahiye</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <button type="submit">Submit & See My Heart</button>
-  </form>
-
-  <div id="result"></div>
-
-  <script>
-    document.getElementById('loveForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('result').innerHTML = `
-        💍 Sona Mona, tumhare har jawab ne mere dil ko khushi se bhar diya.  
-        Ab main tumse ek sawal poochna chahta hoon...  
-        <strong>Will you marry me?</strong> 💖
-        <br><br>
-        <button onclick="alert('Yay! I love you too 💘')">Yes, I will!</button>
-        <button onclick="alert('Main intezaar karunga, hamesha 💌')">Let me think...</button>
-      `;
-    });
-  </script>
+    <script>
+        function showProposal() {
+            document.getElementById('proposalMessage').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
