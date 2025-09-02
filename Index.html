@@ -1,135 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <title>For Sona Mona 💖</title>
+  <title>Happy Birthday Month Sona Mona 🎉</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #ffdde1, #ee9ca7);
-      text-align: center;
-      padding: 30px;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to right, #ffdde1, #ff9a9e);
       color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .question {
-      margin: 20px 0;
-    }
-    input[type="text"], select {
-      padding: 10px;
-      width: 80%;
-      max-width: 400px;
-      margin-top: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-    button {
-      padding: 12px 25px;
-      font-size: 1em;
-      margin-top: 30px;
-      border: none;
-      border-radius: 8px;
-      background-color: #ff69b4;
+    header {
+      background: #ff4b5c;
       color: white;
-      cursor: pointer;
+      padding: 30px;
+      font-size: 34px;
     }
-    #result {
-      margin-top: 40px;
-      font-size: 1.5em;
-      color: #d6336c;
+    h2 {
+      margin-top: 20px;
+      color: #c2185b;
+    }
+    .balloons {
+      margin: 30px auto;
+    }
+    .balloons img {
+      width: 100px;
+      margin: 10px;
+    }
+    .message {
+      font-size: 20px;
+      margin: 20px auto;
+      width: 75%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+    }
+    footer {
+      background: #ffb6c1;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    /* Animation for balloons */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+    .balloons img {
+      animation: float 3s ease-in-out infinite;
     }
   </style>
 </head>
 <body>
-  <h1>Dear Sona Mona 💕</h1>
-  <p>Just a few questions from my heart to yours...</p>
+  <header>
+    🎂 Happy Birthday Month, My Love - Sona Mona 🎂
+  </header>
 
-  <form id="loveForm">
-    <div class="question">1. Kya tum mujhe pasand karti ho?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, bohot zyada</option>
-        <option>Thoda thoda</option>
-        <option>Nahi</option>
-      </select>
-    </div>
+  <h2>🎉 Ab shuru hua tumhara Birthday Month 🎉</h2>
 
-    <div class="question">2. Tumhare liye pyaar ka matlab kya hai?<br>
-      <input type="text" required>
-    </div>
+  <div class="balloons">
+    <img src="https://cdn.pixabay.com/photo/2013/07/12/13/57/balloons-147307_960_720.png" alt="Balloon">
+    <img src="https://cdn.pixabay.com/photo/2014/04/02/14/11/balloon-306354_960_720.png" alt="Balloon">
+    <img src="https://cdn.pixabay.com/photo/2012/04/24/12/45/balloon-39788_960_720.png" alt="Balloon">
+  </div>
 
-    <div class="question">3. Tumhe meri kaunsi baat sabse achhi lagti hai?<br>
-      <input type="text" required>
-    </div>
+  <div class="message">
+    <p>Dear Sona Mona 💖,</p>
+    <p>Aaj se tumhara **Birthday Month** start ho gaya hai ✨  
+    Aur main chahta hoon ki iss pure mahine tumhe special feel ho.  
+    Har din tumhe yaad dilana hai ki tum meri life ki sabse khoobsurat feeling ho.  
+    <br><br>
+    Ye mahina tumhare naam, tumhari khushi aur tumhari muskaan ke naam ❤️  
+    Happy Birthday Month, meri jaan! 🎂🎉🎁
+    </p>
+  </div>
 
-    <div class="question">4. Jab tum udaas hoti ho, kya mujhe yaad karti ho?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Hamesha</option>
-        <option>Kabhi kabhi</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">5. Agar hum kahin ghoomne jayein, tum kahan jaana chahogi?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">6. Tumhare sapno ka partner kaisa hota hai?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">7. Kya tumhe lagta hai hum perfect jodi hain?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Bilkul</option>
-        <option>Shaayad</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">8. Tumhare liye sabse romantic moment kya tha humare saath?<br>
-      <input type="text" required>
-    </div>
-
-    <div class="question">9. Agar tumhe ek wish mile, kya tum mujhe apne future mein chahti?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, hamesha</option>
-        <option>Shaayad</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <div class="question">10. Kya tum mere saath apni zindagi bitana chahogi?<br>
-      <select required>
-        <option value="">Choose</option>
-        <option>Haan, main ready hoon</option>
-        <option>Thoda waqt chahiye</option>
-        <option>Nahi</option>
-      </select>
-    </div>
-
-    <button type="submit">Submit & See My Heart</button>
-  </form>
-
-  <div id="result"></div>
-
-  <script>
-    document.getElementById('loveForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      document.getElementById('result').innerHTML = `
-        💍 Sona Mona, tumhare har jawab ne mere dil ko khushi se bhar diya.  
-        Ab main tumse ek sawal poochna chahta hoon...  
-        <strong>Will you marry me?</strong> 💖
-        <br><br>
-        <button onclick="alert('Yay! I love you too 💘')">Yes, I will!</button>
-        <button onclick="alert('Main intezaar karunga, hamesha 💌')">Let me think...</button>
-      `;
-    });
-  </script>
+  <footer>
+    🌸 Sona Mona, tum meri duniya ho 💕  
+    Ye Birthday Month tumhari life ka sabse khubsurat mahina ho 🎂
+  </footer>
 </body>
 </html>
